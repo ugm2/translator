@@ -12,11 +12,9 @@ import os
 import logging
 import sys
 
-from tests.summariser_unittest import SummariserUnitTest
-from tests.summariser_api_unittest import SummariserAPITestCase
+from tests.translator_api_unittest import TranslatorAPITestCase
 
-assert SummariserUnitTest
-assert SummariserAPITestCase
+assert TranslatorAPITestCase
 
 sys.path.append(os.getcwd())
 
