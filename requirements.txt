@@ -1,3 +1,4 @@
 fastapi==0.63.0
 uvicorn==0.13.4
 easynmt==2.0.1
+streamlit==0.81.0
