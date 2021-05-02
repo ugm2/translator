@@ -1,2 +1,3 @@
-# summariser
-Hugging Face Transformer cross-lingual summariser service
+# translator
+
+EasyNMT (Easy to use Neural Machine Translation) translation wrapper service
