@@ -1,2 +1,4 @@
-streamlit run interface/translator_interface.py --server.port 5002 &
-uvicorn translator.api.server:app --reload --workers $(nproc --all) --host 0.0.0.0 --port 5001
+export $(grep -v '^#' .env | xargs)
+
+streamlit run interface/translator_interface.py --server.port $INTERFACE_PORT &
+uvicorn translator.api.server:app --reload --workers $(nproc --all) --host 0.0.0.0 --port $AI_PORT
