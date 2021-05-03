@@ -8,9 +8,9 @@ app = FastAPI()
 translator = EasyNMT('opus-mt', device='cpu')
 
 first_example = \
-"Según el portal oficial de la organización, Microsoft tiene la intención de terminar formalmente sus operaciones con Windows después del 14 de enero de 2020"
+"Según el portal oficial de la organización, Microsoft tiene la intención de terminar formalmente sus operaciones con Windows 7 después del 14 de enero de 2020"
 second_example = \
-"根据该组织的官方网站，微软计划在2020年1月14日之后正式终止其Windows运营"
+"根据该组织的官方网站，微软计划在2020年1月14日之后正式终止其Windows 7的运营"
 
 class Payload(BaseModel):
     sentences: List[str] = Field(title="Sentences to translate",

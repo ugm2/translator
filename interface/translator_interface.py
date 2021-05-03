@@ -21,9 +21,9 @@ def interface():
     sentences = st.text_area("Input sentences separated by ';'",
                              value="Según el portal oficial de la organización, "
                                    "Microsoft tiene la intención de terminar formalmente "
-                                   "sus operaciones con Windows después del 14 de enero de 2020;\n"
+                                   "sus operaciones con Windows 7 después del 14 de enero de 2020;\n"
                                    "根据该组织的官方网站，"
-                                   "微软计划在2020年1月14日之后正式终止其Windows运营")
+                                   "微软计划在2020年1月14日之后正式终止其Windows 7的运营")
     try:
         sentences = sentences.split(";")
         sentences = list(map(lambda s: s.replace('\n', '').strip(), sentences))
